@@ -1,5 +1,7 @@
+package basicMultiThreading;
+
 public class ThreadPriority {
-    public static void main(String[] args) {
+    public static  void main(String[] args) {
         System.out.println( Thread.currentThread().getName()+" :"+Thread.currentThread().getPriority());
         System.out.println(Thread.currentThread().getName()+" Hello from main");
 //
