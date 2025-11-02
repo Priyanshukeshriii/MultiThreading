@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockExample {
-    private final  Lock lock = new ReentrantLock(true);
+    private final  Lock lock = new ReentrantLock();//this prevents deadlock
     void outerMethod(){
         lock.lock();
         try {
